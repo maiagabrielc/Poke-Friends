@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 
 
 class App extends Component {
@@ -20,13 +20,14 @@ class App extends Component {
       .then(pokes => this.setState({ pokemons: pokes.results }));
   }
 
-  onSearchChange = (event) => {
-    this.setState({ searchField: event.target.value });
+  onSearchChange = ({ target }) => {
+    this.setState({ searchField: target.value });
   }
 
   render() {
-    const filteredPokemons = this.state.pokemons.filter(pokemon => {
-      return pokemon.name.toLowerCase().includes(this.state.searchField.toLowerCase());
+    const { pokemons, searchField } = this.state;
+    const filteredPokemons = pokemons.filter(pokemon => {
+      return pokemon.name.toLowerCase().includes(searchField.toLowerCase());
     });
     return (
       <div className='tc'>
