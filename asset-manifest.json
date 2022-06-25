@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Poke-Friends/static/css/main.b3c5ecb0.css",
+    "main.js": "/Poke-Friends/static/js/main.df67f0ff.js",
+    "static/js/787.f70d0760.chunk.js": "/Poke-Friends/static/js/787.f70d0760.chunk.js",
+    "index.html": "/Poke-Friends/index.html",
+    "main.b3c5ecb0.css.map": "/Poke-Friends/static/css/main.b3c5ecb0.css.map",
+    "main.df67f0ff.js.map": "/Poke-Friends/static/js/main.df67f0ff.js.map",
+    "787.f70d0760.chunk.js.map": "/Poke-Friends/static/js/787.f70d0760.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3c5ecb0.css",
+    "static/js/main.df67f0ff.js"
+  ]
+}
